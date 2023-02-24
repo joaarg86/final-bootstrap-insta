@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Instagram PhotoFeed Using BootStrap</title>
+    <script src="https://kit.fontawesome.com/23aa97424d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Nunito+Sans:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar bg-body-tertiary container">
+    <div class="d-flex">
+      <a class="navbar-brand" href="#">
+        <p class=" m-2"> <i class="fa-brands fa-instagram" ></i>Instagram</p></a>                
+    </div> 
+  
+    <div class="d-flex m-3 ">
+    <button type="button" class="me-2 btn btn-success " data-bs-toggle="modal" data-bs-target="#Modal">
+      Create a new post</button> 
+    <div class="modal fade " id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Create New Post</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <div class="form-group">
+                  <label for="user-message" class="col-lg-2 control-label">Caption:
+                  </label>
+                  <div class="col-lg-10">    
+           <textarea name="user-message" id="user-message" cols="20"  rows="3" class="form-control" placeholder="Add the caption of your post here"></textarea>
+            </div>   
+              </div>
+                <i class="fas fa-camera fa-1x"></i>   
+                <i class="fas fa-map-marker-alt fa-1x"></i>
+            </form>
+            
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-success">Publish</button>
+          </div>
+        </div>
+     </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="dropdown">
+      <a class="btn btn-secondary dropdown-toggle ms-auto" type="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false"><i class="fa-solid fa-gear"></i></a>
+      <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+        <li><a class="dropdown-item" href="#">Profile</a></li>
+        <li><a class="dropdown-item" href="#">Accesibility</a></li>
+        <li><a class="dropdown-item" href="#">Privacy & Data</a></li>
+        <li><hr class="dropdown-divider"></li>
+       <li><a class="dropdown-item" href="#"><span style="color:red">Sign out</span></a></li>
+      </ul>
+      </div>
+    </div>
+  </nav>
+
+<div class="container">
+
+
+<ul class="nav navtabs navbar justify-content-center mb-3 m-3 " id="myTab" role="tablist">
+
+  <li class="nav-item mx-3 " role="presentation">
+    <a i class="fa-solid fa-table-cells" href="#"  class=" nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home"  aria-selected="true"></a> 
+  </li>
+  
+  <li class=" nav-item mx-3" role="presentation">
+    <a i class="fa-solid fa-square" href="#" class=" nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false"></a>
+  </li>
+</ul>
+
+
+<div class="tab-content" id="myTabContent">
+
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+  <div class="row justify-content-center gy-3 gx-3">   
+  
+      <div class="item col-xs-4 col-lg-4">
+                  <img class="group list-group-image img-responsive" width="100%" src="https://blog.icihomes.com/wp-content/uploads/2016/12/happy-family-with-gradient-400px.jpg" alt="" />
+          </div>         
+
+
+
+      <div class="item col-xs-4 col-lg-4"  >
+          <img class="group list-group-image" width="100%" src="https://www.littler.com/files/styles/adaptive/public/cci-wes-puppy-400px.jpg?itok=kTP5wW2T" alt=""/>
+      </div>
+
+
+   
+      <div class="item col-xs-4 col-lg-4" >         
+
+          <img class="group list-group-image" width="100%" src=" http://www.shepaused4thought.com/wp-content/uploads/2013/06/Chicken-Tower-400px.jpg" alt=""/>
+      </div>
+
+
+    
+      <div class="item col-xs-4 col-lg-4"  >
+
+          <img class="group list-group-image" width="100%" src="https://www.esodoc.eu/images/stories/trainers/Margaux_Missika_Photo1-400px.jpg " alt=""/>
+
+      </div>   
+       
+
+
+      <div class="item col-xs-4 col-lg-4" >
+
+              <img class="group list-group-image" width="100%" src="https://batcon.org/wp-content/uploads/2020/04/Volunteers_CREDIT-Anne-Youngman-_-Bat-Conservation-Trust_400px.png " alt=""/>
+
+      </div>
+          
+
+     
+      <div class="item col-xs-4 col-lg-4"  >
+
+            <img class="group list-group-image" width="100%" src="https://www.covercropstrategies.com/ext/resources/images/Product-Showcase/Growers/2021/SaddleButte2-400px.png?t=1625606275&width=400" alt=""/>
+              </div>
+
+      
+
+
+      <div class="item col-xs-4 col-lg-4" >
+
+                <img class="group list-group-image" width="100%" src="https://northernirelandholidays.co.uk/wp-content/uploads/2012/01/Giant-Causeway-IMG_5889-pass-with-money-rocks-400px.jpg" alt=""/>
+
+      </div>
+           
+
+
+      <div class="item col-xs-4 col-lg-4"  >
+
+                <img class="group list-group-image" width="100%" src=" https://timpfest.org/wp-content/uploads/2019/07/John-McCutcheon-400px-comp.jpg" alt=""/>
+
+      </div>
+          
+        
+ 
+      <div class="item col-xs-4 col-lg-4"  >
+
+                <img class="group list-group-image" width="100%" src=" https://create.vista.com/s3-static/templates/615573e38070ea8a9ba39080-400px.webp" alt=""/>
+
+      </div>
+
+  </div>
+  </div>
+
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"> 
+  <div class="row justify-content-center gy-3 gx-3"> 
+          
+          
+
+<div class="col-xs-4 col-lg-4 justify-content-center"  >
+  <div class="thumbnail p-0 border bg-white">
+    <div class="caption">
+      <p class="me-2 text-end">1 of 12</p>
+            <h4 class="ms-2 group inner list-group-item-heading">
+                My family is the best</h4>    
+                <img class="group list-group-image img-responsive" width="100%" src="https://blog.icihomes.com/wp-content/uploads/2016/12/happy-family-with-gradient-400px.jpg" alt="" />
+    </div>         
+    <div class="caption">
+              <p class="ms-2 group inner list-group-item-text"><strong>
+          210 Likes</strong></p>
+              <p class="ms-2 group inner list-group-item-text text-justify">
+          Group hug with my family!</p>
+    </div>
+  </div>
+</div>
+<div class="w-100"></div>    
+  
+
+<div class="col-xs-4 col-lg-4 justify-content-center">
+  <div class="thumbnail p-0 border bg-white">
+    <div class="caption">
+      <p class="ms-2 text-end"> 2 of 12</p> 
+              <h4 class="ms-2 group inner list-group-item-heading">
+                Sam became a service dog today</h4>
+               <img class=" group list-group-image img-responsive" width="100%" src="https://www.littler.com/files/styles/adaptive/public/cci-wes-puppy-400px.jpg?itok=kTP5wW2T" alt=""/>
+    </div>
+    <div class="caption">
+      <p class="ms-2 group inner list-group-item-text"><strong>
+          496 Likes</strong></p>
+      <p class="ms-2 group inner list-group-item-text text-justify">
+          Sam, looking cute wearing his new uniform !</p>
+    </div>
+  </div>
+</div>
+
+<div class="w-100"></div>
+ 
+<div class=" col-xs-4 col-lg-4 justify-content-center"  >
+  <div class="thumbnail p-0 border bg-white">
+    <div class="caption">
+      <p class="me-2 text-end">3 of 12</p> 
+        <h4 class="ms-2 group inner list-group-item-heading">
+        My fav food so far</h4>
+        <img class=" group list-group-image img-responsive" width="100%" src=" http://www.shepaused4thought.com/wp-content/uploads/2013/06/Chicken-Tower-400px.jpg" alt=""/>
+    </div>
+    <div class="caption">
+        <p class="ms-2 group inner list-group-item-text"><strong>
+            4766 Likes</strong></p>
+        <p class="ms-2 group inner list-group-item-text text-justify">
+            Loving the culinary kitchen :) </p>
+    </div>
+  </div>
+</div>
+  
+
+<div class="w-100"></div>
+  
+<div class=" col-xs-4 col-lg-4 justify-content-center"  >
+    <div class="thumbnail p-0 border bg-white">
+      <div class="caption">
+        <p class="me-2 text-end">4 of 12</p> 
+            <h4 class="ms-2 group inner list-group-item-heading">
+            My new hairstyle</h4>
+        <img class=" group list-group-image" width="100%" src="https://www.esodoc.eu/images/stories/trainers/Margaux_Missika_Photo1-400px.jpg " alt=""/>
+      </div>
+      <div class="caption">
+        <p class="ms-2 group inner list-group-item-text"><strong>
+            89 Likes</strong></p>
+        <p class="ms-2 group inner list-group-item-text text-justify">
+            I needed a change and I'm in love with my new look  </p>
+      </div>
+    </div>
+</div>
+ 
+<div class="w-100"></div>
+
+
+<div class=" col-xs-4 col-lg-4 justify-content-center"  >
+  <div class="thumbnail p-0 border bg-white">      
+        <div class="caption">
+          <p class="me-2 text-end">5 of 12</p> 
+          <h4 class="ms-2 group inner list-group-item-heading">
+            Uncle Jeff is in town</h4>
+            <img class=" group list-group-image" width="100%" src="https://batcon.org/wp-content/uploads/2020/04/Volunteers_CREDIT-Anne-Youngman-_-Bat-Conservation-Trust_400px.png " alt=""/>
+        </div>
+        <div class="caption">
+            <p class="ms-2 group inner list-group-item-text"><strong>
+                35 Likes</strong></p>
+            <p class="ms-2 group inner list-group-item-text text-justify">
+                Having a wonderful evening with mom and uncle Jeff </p>
+        </div>
+  </div>
+</div>
+   
+<div class="w-100"></div>        
+
+   
+<div class=" col-xs-4 col-lg-4 justify-content-center"  >
+    <div class="thumbnail p-0 border bg-white">      
+        <div class="caption">
+          <p class="me-2 text-end">6 of 12</p>
+              <h4 class="ms-2 group inner list-group-item-heading">
+                My new friend</h4>
+          <img class=" group list-group-image" width="100%" src="https://www.covercropstrategies.com/ext/resources/images/Product-Showcase/Growers/2021/SaddleButte2-400px.png?t=1625606275&width=400" alt=""/>
+        </div>
+        <div class="caption">
+            <p class="ms-2 group inner list-group-item-text"><strong>
+                7 Likes</p></strong>
+            <p class="ms-2 group inner list-group-item-text text-justify">
+                Look what I am found hiding in the field today, seems friendly :) </p>
+        </div>
+    </div>
+</div>
+     
+<div class="w-100"></div> 
+
+
+<div class=" col-xs-4 col-lg-4 justify-content-center" >
+  <div class="thumbnail p-0 border bg-white">    
+      <div class="caption">
+        <p class="me-2 text-end">7 of 12</p>
+                <h4 class="ms-2 group inner list-group-item-heading">
+                    It's chilly outside</h4>
+              <img class=" group list-group-image" width="100%" src="https://northernirelandholidays.co.uk/wp-content/uploads/2012/01/Giant-Causeway-IMG_5889-pass-with-money-rocks-400px.jpg" alt=""/>
+      </div>
+      <div class="caption">
+                <p class="ms-2 group inner list-group-item-text"><strong>
+                    40 Likes</strong></p>
+                <p class="ms-2 group inner list-group-item-text text-justify">
+                    It's nice out for a walk by the beach but don't forget to bring your jacket </p>
+      </div>
+  </div>
+</div>
+         
+<div class="w-100"></div>         
+
+
+<div class=" col-xs-4 col-lg-4 justify-content-center"  >
+  <div class="thumbnail p-0 border bg-white">    
+    <div class="caption">
+      <p class="me-2 text-end">8 of 12</p>
+                    <h4 class="ms-2 group inner list-group-item-heading">
+                    Get your tickets now!!!</h4>
+              <img class=" group list-group-image" width="100%" src=" https://timpfest.org/wp-content/uploads/2019/07/John-McCutcheon-400px-comp.jpg" alt=""/>
+    </div>
+    <div class="caption">
+                <p class="ms-2 group inner list-group-item-text"><strong>
+                    680 Likes</strong></p>
+                <p class="ms-2 group inner list-group-item-text text-justify">
+                    Last day will be friday come join us for dinner and beautiful music </p>
+    </div>
+  </div>
+</div>
+        
+<div class="w-100"></div>       
+      
+
+<div class=" col-xs-4 col-lg-4 justify-content-center" >
+  <div class="thumbnail p-0 border bg-white">    
+    <div class="caption">
+      <p class="me-2 text-end">9 of 12</p>
+                  <h4 class="ms-2 group inner list-group-item-heading">
+                    Love is in the air...</h4>
+              <img class=" group list-group-image" width="100%" src=" https://create.vista.com/s3-static/templates/615573e38070ea8a9ba39080-400px.webp" alt=""/>
+    </div>
+    <div class="caption">
+                <p class="ms-2 group inner list-group-item-text"><strong>
+                    1150 Likes</strong></p>
+                <p class="ms-2 group inner list-group-item-text text-justify">
+                    Sunday brunch with my baby ;P lol</p>
+    </div>
+  </div>
+</div>
+  
+</div>
+</div>
+</div>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
